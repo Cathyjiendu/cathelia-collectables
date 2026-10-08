@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Cathelia Collectables — curated imported fashion, accessories, jewelry and lifestyle essentials.">
+
+    <title>Cathelia Collectables | Curated Imports</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span>CATHELIA</span>
+                <small>COLLECTABLES</small>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#how-to-order">How to Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+
+                <button class="icon-btn" aria-label="Search">
+                    ⌕
+                </button>
+
+                <button class="icon-btn cart-button" id="cartBtn" aria-label="Shopping cart">
+                    🛍️
+                    <span id="cartCount">0</span>
+                </button>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                    ☰
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    CURATED • IMPORTED • DELIVERED
+                </p>
+
+                <h1>
+                    Beautiful things,
+                    <em>beautifully collected.</em>
+                </h1>
+
+                <p class="hero-text">
+                    Discover carefully selected fashion pieces,
+                    jewelry, accessories and lifestyle essentials
+                    imported specially for you.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#collections" class="btn btn-primary">
+                        Shop Collection
+                    </a>
+
+                    <a href="#how-to-order" class="btn btn-outline">
+                        How It Works
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-decoration">
+
+                <div class="hero-circle">
+                    <span>CC</span>
+                </div>
+
+                <div class="floating-card">
+                    <span>CATHELIA</span>
+                    <strong>COLLECTABLES</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURE STRIP ================= -->
+
+        <section class="features">
+
+            <div class="feature">
+                <span>✦</span>
+                <div>
+                    <strong>Curated Finds</strong>
+                    <p>Carefully selected products</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>♡</span>
+                <div>
+                    <strong>Quality First</strong>
+                    <p>Products chosen with intention</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>✈</span>
+                <div>
+                    <strong>Imported</strong>
+                    <p>Sourced internationally</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>📦</span>
+                <div>
+                    <strong>Delivery</strong>
+                    <p>Available across Nigeria</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= COLLECTIONS ================= -->
+
+        <section class="collections" id="collections">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">SHOP BY CATEGORY</p>
+
+                <h2>
+                    Find your next
+                    <em>favourite.</em>
+                </h2>
+
+            </div>
+
+            <div class="category-grid">
+
+                <article class="category-card jewelry-card">
+                    <div class="category-symbol">♡</div>
+                    <span>01</span>
+                    <h3>Jewelry</h3>
+                    <p>Delicate pieces that complete your look.</p>
+                    <button onclick="filterProducts('jewelry')">
+                        Explore →
+                    </button>
+                </article>
+
+                <article class="category-card bags-card">
+                    <div class="category-symbol">♢</div>
+                    <span>02</span>
+                    <h3>Bags</h3>
+                    <p>Elegant bags for everyday moments.</p>
+                    <button onclick="filterProducts('bags')">
+                        Explore →
+                    </button>
+                </article>
+
+                <article class="category-card watches-card">
+                    <div class="category-symbol">◷</div>
+                    <span>03</span>
+                    <h3>Watches</h3>
+                    <p>Timeless accessories with personality.</p>
+                    <button onclick="filterProducts('watches')">
+                        Explore →
+                    </button>
+                </article>
+
+                <article class="category-card tech-card">
+                    <div class="category-symbol">✦</div>
+                    <span>04</span>
+                    <h3>Tech</h3>
+                    <p>Useful essentials for modern living.</p>
+                    <button onclick="filterProducts('tech')">
+                        Explore →
+                    </button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section class="products" id="shop">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">THE COLLECTION</p>
+
+                <h2>
+                    Our <em>Collectables</em>
+                </h2>
+
+                <p class="section-description">
+                    A little something for every style, mood and moment.
+                </p>
+
+            </div>
+
+            <div class="filter-buttons">
+
+                <button class="filter active" onclick="filterProducts('all', this)">
+                    All
+                </button>
+
+                <button class="filter" onclick="filterProducts('jewelry', this)">
+                    Jewelry
+                </button>
+
+                <button class="filter" onclick="filterProducts('bags', this)">
+                    Bags
+                </button>
+
+                <button class="filter" onclick="filterProducts('watches', this)">
+                    Watches
+                </button>
+
+                <button class="filter" onclick="filterProducts('tech', this)">
+                    Tech
+                </button>
+
+            </div>
+
+
+            <div class="product-grid" id="productGrid">
+
+                <!-- PRODUCT 1 -->
+
+                <article class="product-card" data-category="jewelry">
+
+                    <div class="product-image">
+
+                        <span class="product-badge">NEW</span>
+
+                        <!-- Replace this div with your product image -->
+                        <div class="product-placeholder">
+                            <span>JEWELRY</span>
+                            <small>Product Photo</small>
+                        </div>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <p>JEWELRY</p>
+
+                        <h3>Minimalist Necklace</h3>
+
+                        <strong>₦18,500</strong>
+
+                        <button onclick="addToCart('Minimalist Necklace', 18500)">
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+
+                <article class="product-card" data-category="bags">
+
+                    <div class="product-image">
+
+                        <span class="product-badge">POPULAR</span>
+
+                        <div class="product-placeholder">
+                            <span>BAG</span>
+                            <small>Product Photo</small>
+                        </div>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <p>BAGS</p>
+
+                        <h3>Classic Shoulder Bag</h3>
+
+                        <strong>₦35,000</strong>
+
+                        <button onclick="addToCart('Classic Shoulder Bag', 35000)">
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 3 -->
+
+                <article class="product-card" data-category="watches">
+
+                    <div class="product-image">
+
+                        <span class="product-badge">NEW</span>
+
+                        <div class="product-placeholder">
+                            <span>WATCH</span>
+                            <small>Product Photo</small>
+                        </div>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <p>WATCHES</p>
+
+                        <h3>Classic Wristwatch</h3>
+
+                        <strong>₦28,000</strong>
+
+                        <button onclick="addToCart('Classic Wristwatch', 28000)">
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 4 -->
+
+                <article class="product-card" data-category="tech">
+
+                    <div class="product-image">
+
+                        <div class="product-placeholder">
+                            <span>TECH</span>
+                            <small>Product Photo</small>
+                        </div>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <p>TECH</p>
+
+                        <h3>Premium Earphones</h3>
+
+                        <strong>₦22,000</strong>
+
+                        <button onclick="addToCart('Premium Earphones', 22000)">
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 5 -->
+
+                <article class="product-card" data-category="bags">
+
+                    <div class="product-image">
+
+                        <div class="product-placeholder">
+                            <span>BAG</span>
+                            <small>Product Photo</small>
+                        </div>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <p>BAGS</p>
+
+                        <h3>Elegant Mini Bag</h3>
+
+                        <strong>₦25,000</strong>
+
+                        <button onclick="addToCart('Elegant Mini Bag', 25000)">
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 6 -->
+
+                <article class="product-card" data-category="jewelry">
+
+                    <div class="product-image">
+
+                        <div class="product-placeholder">
+                            <span>JEWELRY</span>
+                            <small>Product Photo</small>
+                        </div>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <p>JEWELRY</p>
+
+                        <h3>Gold-Tone Bracelet</h3>
+
+                        <strong>₦15,000</strong>
+
+                        <button onclick="addToCart('Gold-Tone Bracelet', 15000)">
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about" id="about">
+
+            <div class="about-visual">
+
+                <div class="about-card">
+
+                    <span>CC</span>
+
+                    <p>CATHELIA</p>
+
+                    <small>COLLECTABLES</small>
+
+                </div>
+
+            </div>
+
+            <div class="about-content">
+
+                <p class="eyebrow">OUR STORY</p>
+
+                <h2>
+                    More than shopping.
+                    <em>It's collecting.</em>
+                </h2>
+
+                <p>
+                    Cathelia Collectables is an importation and lifestyle
+                    brand created for people who appreciate beautiful,
+                    useful and carefully selected pieces.
+                </p>
+
+                <p>
+                    From jewelry and watches to bags and everyday tech
+                    essentials, we source products internationally and
+                    bring them closer to you.
+                </p>
+
+                <a href="#contact" class="btn btn-primary">
+                    Talk to Us
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW TO ORDER ================= -->
+
+        <section class="how-to-order" id="how-to-order">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">SIMPLE & EASY</p>
+
+                <h2>
+                    How to <em>order.</em>
+                </h2>
+
+            </div>
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <span>01</span>
+
+                    <div>
+                        <h3>Choose</h3>
+                        <p>
+                            Browse our collection and find something
+                            you love.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="step">
+
+                    <span>02</span>
+
+                    <div>
+                        <h3>Add to Bag</h3>
+                        <p>
+                            Select your favourite products and add
+                            them to your shopping bag.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="step">
+
+                    <span>03</span>
+
+                    <div>
+                        <h3>Place Order</h3>
+                        <p>
+                            Send your order to us through WhatsApp
+                            and confirm your details.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="step">
+
+                    <span>04</span>
+
+                    <div>
+                        <h3>Receive</h3>
+                        <p>
+                            Complete payment and receive your order
+                            at your chosen location.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta">
+
+            <div class="cta-content">
+
+                <p class="eyebrow">A LITTLE LUXURY AWAITS</p>
+
+                <h2>
+                    Something beautiful
+                    <em>is waiting for you.</em>
+                </h2>
+
+                <a href="#shop" class="btn btn-white">
+                    Shop the Collection
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact" id="contact">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">GET IN TOUCH</p>
+
+                <h2>
+                    Let's <em>connect.</em>
+                </h2>
+
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-info">
+
+                    <h3>Cathelia Collectables</h3>
+
+                    <p>
+                        Have a question about a product, delivery
+                        or placing an order? Send us a message.
+                    </p>
+
+                    <div class="contact-details">
+
+                        <p>
+                            <strong>Location</strong>
+                            Uyo, Akwa Ibom, Nigeria
+                        </p>
+
+                        <p>
+                            <strong>Delivery</strong>
+                            Nationwide & international
+                        </p>
+
+                        <p>
+                            <strong>WhatsApp</strong>
+                            +234 914 307 283
+                        </p>
+
+                        <p>
+                            <strong>Email</strong>
+                            hello@catheliacollectables.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form id="contactForm" class="contact-form">
+
+                    <label>
+                        Name
+                        <input type="text" required placeholder="Your name">
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" required placeholder="Your email">
+                    </label>
+
+                    <label>
+                        Message
+                        <textarea required rows="5" placeholder="How can we help?"></textarea>
+                    </label>
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            <span>CATHELIA</span>
+            <small>COLLECTABLES</small>
+        </div>
+
+        <p>
+            Curated imports. Beautifully collected.
+        </p>
+
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">WhatsApp</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Cathelia Collectables. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= CART ================= -->
+
+    <div class="cart-overlay" id="cartOverlay">
+
+        <aside class="cart">
+
+            <button class="close-cart" id="closeCart">
+                ×
+            </button>
+
+            <p class="eyebrow">YOUR SELECTION</p>
+
+            <h2>Your Bag</h2>
+
+            <div id="cartItems">
+
+                <p class="empty-cart">
+                    Your bag is currently empty.
+                </p>
+
+            </div>
+
+            <div class="cart-bottom">
+
+                <div class="cart-total">
+                    <span>Total</span>
+                    <strong id="cartTotal">₦0</strong>
+                </div>
+
+                <button class="checkout-btn" onclick="checkoutWhatsApp()">
+                    Order via WhatsApp
+                </button>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
